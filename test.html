@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGIN</title>
+<style>
+body {
+background-color: rgb(86, 89, 86);
+background-size: cover;
+font-size: 16px
+}
+
+#register{
+background-color: rgb(146, 194, 194);
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+height: 420px;
+border-radius: 30px;
+margin-top: 200PX;
+text-align: center;
+}
+input{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+width: 250px;
+border-radius: 5px;
+height: 23PX;
+background-color: rgb(208, 206, 208);
+color: blue
+}
+#top{
+width: 61px;
+background-color: rgb(31, 249, 238);
+color:black;
+filter: blur(0.5px);
+
+}
+#top:hover{
+background-color:yellow;
+color: black;
+
+}
+h2{
+    background-color: rgb(117, 243, 241);
+    filter: blur(0.5px);
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<FORM method="post" action="enter.php" id="register">
+<h2>Registration form</h2>
+
+<label>email</label>
+<input type="email" name="email" required>
+
+<label>password</label>
+<input type="password" name="password" required>
+<label>Age</label>
+<input type="number" name="Age" required>
+
+<label>Name</label>
+<input type="text" name="Name" required>
+
+<label for="gender">Gender</label>
+<input type="radio" name="gender" value="male" required >male
+<input type="radio" name="gender" value="female" required >female
+
+
+
+<input type="submit" value="register" id="top">
+
+</FORM>
+
+
+
+</body>
+</html>
